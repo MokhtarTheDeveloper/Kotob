@@ -16,8 +16,6 @@
 		13967BB72156747900ED6E95 /* PeekBookView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13967BB62156747900ED6E95 /* PeekBookView.xib */; };
 		13967BB921568E8E00ED6E95 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13967BB821568E8E00ED6E95 /* LoginView.swift */; };
 		13DF22D721554642007E0844 /* NewHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DF22D621554642007E0844 /* NewHomeController.swift */; };
-		13DF22DD21556C17007E0844 /* CachedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DF22DC21556C17007E0844 /* CachedImageView.swift */; };
-		13DF22DF21556CA1007E0844 /* DiscardableImageCacheItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DF22DE21556CA1007E0844 /* DiscardableImageCacheItem.swift */; };
 		13EE50132151B24D00FEB80C /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EE50122151B24D00FEB80C /* LoginResponse.swift */; };
 		13EE5824215188D90065594C /* Kotob Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EE5823215188D90065594C /* Kotob Button.swift */; };
 		13F239F82152BC80006761C1 /* DroidNaskh-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13F239F62152BC80006761C1 /* DroidNaskh-Bold.ttf */; };
@@ -68,8 +66,6 @@
 		13967BB62156747900ED6E95 /* PeekBookView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeekBookView.xib; sourceTree = "<group>"; };
 		13967BB821568E8E00ED6E95 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		13DF22D621554642007E0844 /* NewHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHomeController.swift; sourceTree = "<group>"; };
-		13DF22DC21556C17007E0844 /* CachedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedImageView.swift; sourceTree = "<group>"; };
-		13DF22DE21556CA1007E0844 /* DiscardableImageCacheItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscardableImageCacheItem.swift; sourceTree = "<group>"; };
 		13EE50122151B24D00FEB80C /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		13EE5823215188D90065594C /* Kotob Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kotob Button.swift"; sourceTree = "<group>"; };
 		13F239F62152BC80006761C1 /* DroidNaskh-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DroidNaskh-Bold.ttf"; sourceTree = "<group>"; };
@@ -196,8 +192,6 @@
 				13F7BE752152F1DB00A09BB4 /* HindawiAPI.swift */,
 				13EE5823215188D90065594C /* Kotob Button.swift */,
 				13F45CF12151593A00DF15B7 /* Extensions.swift */,
-				13DF22DC21556C17007E0844 /* CachedImageView.swift */,
-				13DF22DE21556CA1007E0844 /* DiscardableImageCacheItem.swift */,
 				13967BB32156650700ED6E95 /* ASJColoredScrollIndicators.h */,
 				13967BB42156650700ED6E95 /* ASJColoredScrollIndicators.m */,
 				13967BB22156650600ED6E95 /* Kotob-Bridging-Header.h */,
@@ -467,12 +461,10 @@
 				13F45CC22151568100DF15B7 /* AppDelegate.swift in Sources */,
 				13F312382155F76D00EA22F7 /* CategoryTableViewCell.swift in Sources */,
 				13F45CF22151593A00DF15B7 /* Extensions.swift in Sources */,
-				13DF22DD21556C17007E0844 /* CachedImageView.swift in Sources */,
 				13F45CF02151575700DF15B7 /* LoginController.swift in Sources */,
 				133CBA9921534C560072626C /* ForgotPasswordControllerr.swift in Sources */,
 				13DF22D721554642007E0844 /* NewHomeController.swift in Sources */,
 				1333904621524BD10040F4AB /* RegiesterationController.swift in Sources */,
-				13DF22DF21556CA1007E0844 /* DiscardableImageCacheItem.swift in Sources */,
 				139009FF215504C900AC84A0 /* CategoriesModel.swift in Sources */,
 				13EE50132151B24D00FEB80C /* LoginResponse.swift in Sources */,
 				13F8ECCC2154F002001EC0DD /* MostRecentCell.swift in Sources */,

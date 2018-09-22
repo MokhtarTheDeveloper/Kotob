@@ -46,11 +46,10 @@ class NewHomeController : UITableViewController{
         super.viewDidLoad()
         view.backgroundColor = UIColor(r: 243, g: 245, b: 248)
         UIView.appearance().semanticContentAttribute = .forceRightToLeft
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.isTranslucent = false
-        self.navigationController?.navigationBar.barTintColor = UIColor(r: 243, g: 245, b: 248)
-        self.navigationController?.navigationBar.tintColor = .black
+//        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+//        self.navigationController?.navigationBar.shadowImage = UIImage()
+//        self.navigationController?.navigationBar.isTranslucent = false
+        
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "user"), style: .plain, target: self, action: #selector(showUserProfile))
         getRecentBooks()
