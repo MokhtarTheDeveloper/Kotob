@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MostRecentCell" customModule="Kotob" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="188" height="307"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n5h-xF-rCO">
+                    <rect key="frame" x="0.0" y="0.0" width="188" height="250"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="n5h-xF-rCO" secondAttribute="height" multiplier="304:406" id="S3r-VT-LQC"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="vtz-cm-8tC">
+                    <rect key="frame" x="82" y="267.5" width="24.5" height="26.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26.5" id="4Qd-PZ-CRq"/>
+                        <constraint firstAttribute="width" constant="24.5" id="E83-Z9-CBV"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vtz-cm-8tC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="AqJ-4f-Reh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="n5h-xF-rCO" secondAttribute="trailing" id="Isf-Tu-gNd"/>
+                <constraint firstItem="n5h-xF-rCO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MXU-gf-KlW"/>
+                <constraint firstItem="vtz-cm-8tC" firstAttribute="top" secondItem="n5h-xF-rCO" secondAttribute="bottom" constant="17.5" id="Tvm-9p-oYz"/>
+                <constraint firstItem="n5h-xF-rCO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="s1c-U9-Kka"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bookCover" destination="n5h-xF-rCO" id="zc4-Pw-E21"/>
+                <outlet property="downloaded" destination="vtz-cm-8tC" id="SXH-BM-RhQ"/>
+            </connections>
+            <point key="canvasLocation" x="-79" y="-23.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="download" width="26" height="24"/>
+    </resources>
+</document>
