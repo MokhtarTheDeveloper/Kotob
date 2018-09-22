@@ -46,10 +46,6 @@ class NewHomeController : UITableViewController{
         super.viewDidLoad()
         view.backgroundColor = UIColor(r: 243, g: 245, b: 248)
         UIView.appearance().semanticContentAttribute = .forceRightToLeft
-//        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-//        self.navigationController?.navigationBar.shadowImage = UIImage()
-//        self.navigationController?.navigationBar.isTranslucent = false
-        
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "user"), style: .plain, target: self, action: #selector(showUserProfile))
         getRecentBooks()
@@ -97,16 +93,16 @@ class NewHomeController : UITableViewController{
     }
 
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let rview = TableViewHeader()
+        let headeView = TableViewHeader()
         if section == 0 {
-            rview.headerTitle.text = "احدث الكتب"
+            headeView.headerTitle.text = "احدث الكتب"
             
         } else {
-            rview.headerTitle.text = "الاكثر تحميلا"
+            headeView.headerTitle.text = "الاكثر تحميلا"
 
         }
-        rview.headerTitle.font = UIFont.textStyle
-        return rview
+        headeView.headerTitle.font = UIFont.textStyle
+        return headeView
     }
     
     override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {

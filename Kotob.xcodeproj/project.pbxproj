@@ -15,6 +15,8 @@
 		13967BB52156650700ED6E95 /* ASJColoredScrollIndicators.m in Sources */ = {isa = PBXBuildFile; fileRef = 13967BB42156650700ED6E95 /* ASJColoredScrollIndicators.m */; };
 		13967BB72156747900ED6E95 /* PeekBookView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13967BB62156747900ED6E95 /* PeekBookView.xib */; };
 		13967BB921568E8E00ED6E95 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13967BB821568E8E00ED6E95 /* LoginView.swift */; };
+		13967BBB2156D27B00ED6E95 /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13967BBA2156D27B00ED6E95 /* BookCell.xib */; };
+		13967BBD2156D39700ED6E95 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13967BBC2156D39700ED6E95 /* BookCell.swift */; };
 		13DF22D721554642007E0844 /* NewHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DF22D621554642007E0844 /* NewHomeController.swift */; };
 		13EE50132151B24D00FEB80C /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EE50122151B24D00FEB80C /* LoginResponse.swift */; };
 		13EE5824215188D90065594C /* Kotob Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EE5823215188D90065594C /* Kotob Button.swift */; };
@@ -65,6 +67,8 @@
 		13967BB42156650700ED6E95 /* ASJColoredScrollIndicators.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASJColoredScrollIndicators.m; path = Pods/ASJColoredScrollIndicators/ASJColoredScrollIndicators/ASJColoredScrollIndicators.m; sourceTree = SOURCE_ROOT; };
 		13967BB62156747900ED6E95 /* PeekBookView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeekBookView.xib; sourceTree = "<group>"; };
 		13967BB821568E8E00ED6E95 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		13967BBA2156D27B00ED6E95 /* BookCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCell.xib; sourceTree = "<group>"; };
+		13967BBC2156D39700ED6E95 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 		13DF22D621554642007E0844 /* NewHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHomeController.swift; sourceTree = "<group>"; };
 		13EE50122151B24D00FEB80C /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		13EE5823215188D90065594C /* Kotob Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kotob Button.swift"; sourceTree = "<group>"; };
@@ -203,6 +207,8 @@
 			isa = PBXGroup;
 			children = (
 				13F8ECC92154ED63001EC0DD /* MostRecentCell.xib */,
+				13967BBA2156D27B00ED6E95 /* BookCell.xib */,
+				13967BBC2156D39700ED6E95 /* BookCell.swift */,
 				13F2F27F21561AD50029FBD3 /* TableViewHeader.swift */,
 				13F8ECCB2154F002001EC0DD /* MostRecentCell.swift */,
 				13F312372155F76D00EA22F7 /* CategoryTableViewCell.swift */,
@@ -346,6 +352,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13967BBB2156D27B00ED6E95 /* BookCell.xib in Resources */,
 				13F3123A2155F96900EA22F7 /* CategoryTableViewCell.xib in Resources */,
 				13967BB72156747900ED6E95 /* PeekBookView.xib in Resources */,
 				13F239F92152BC80006761C1 /* DroidNaskh-Regular.ttf in Resources */,
@@ -460,6 +467,7 @@
 				1302265E21540AA600820CC0 /* registerationResponse.swift in Sources */,
 				13F45CC22151568100DF15B7 /* AppDelegate.swift in Sources */,
 				13F312382155F76D00EA22F7 /* CategoryTableViewCell.swift in Sources */,
+				13967BBD2156D39700ED6E95 /* BookCell.swift in Sources */,
 				13F45CF22151593A00DF15B7 /* Extensions.swift in Sources */,
 				13F45CF02151575700DF15B7 /* LoginController.swift in Sources */,
 				133CBA9921534C560072626C /* ForgotPasswordControllerr.swift in Sources */,
