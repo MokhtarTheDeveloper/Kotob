@@ -10,20 +10,23 @@ import Foundation
 
 class HindawiAPI {
     
-    class func getMostRecent(urlString: String, completionHandler: ((BooksCategory) -> ())?) {
+    class func getAHomeCategory<T: Codable>(urlString: String, completionHandler: ((T) -> ())?) {
         guard let url = URL(string: urlString) else { return }
         let session = URLSession.shared.dataTask(with: url) { (data, response, err) in
             guard let data = data, err == nil else { return }
             do {
-                let bookCategory = try JSONDecoder().decode(BooksCategory.self, from: data)
+                let bookCategory = try JSONDecoder().decode(T.self, from: data)
                 completionHandler?(bookCategory)
                 
-            } catch {
-                print("error parsing JSON from most recent API")
+            } catch let parsingErr{
+                print("error parsing JSON from book category API", parsingErr)
             }
         }
         session.resume()
     }
+    
+    
+    
     
     class func postBody<T: Codable> (to url : URL, of jsonDict : Any, completionHandler: @escaping ((T)->()))  {
         

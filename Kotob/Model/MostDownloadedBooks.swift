@@ -1,14 +1,22 @@
 //
-//  HomeModel.swift
+//  MostDownloadedBooks.swift
 //  Kotob
 //
-//  Created by Mokhtar on 9/21/18.
+//  Created by Mokhtar on 9/23/18.
 //  Copyright © 2018 Mokhtar. All rights reserved.
 //
+
 import Foundation
 
-struct BooksCategory: Codable {
-    let books: [Book]
+
+// To parse the JSON, add this file to your project and do:
+//
+//   let mostRecent = try? newJSONDecoder().decode(MostRecent.self, from: jsonData)
+
+import Foundation
+
+struct MostDownloaded: Codable {
+    let books: [MostDownloadedBook]
     let oldStyle: OldStyle
     let newStyle: NewStyle
     
@@ -19,13 +27,11 @@ struct BooksCategory: Codable {
     }
 }
 
-struct Book: Codable {
-    let documentType: Int
+struct MostDownloadedBook: Codable {
     let rate: Double
-    let downloadsCount: SCount
+    let downloadsCount: String
     let userRating: Int
-    let tags: String
-    let ratingsCount: SCount
+    let tags, ratingsCount: String
     let bookURL: String
     let isFree: Int
     let price: String
@@ -40,7 +46,6 @@ struct Book: Codable {
     let authors: [Author]
     
     enum CodingKeys: String, CodingKey {
-        case documentType = "DocumentType"
         case rate = "Rate"
         case downloadsCount = "DownloadsCount"
         case userRating = "UserRating"
@@ -62,48 +67,24 @@ struct Book: Codable {
     }
 }
 
-struct Author: Codable {
-    let authorName: String
-    let role: Role
-    let itemNumber: String
-    
-    enum CodingKeys: String, CodingKey {
-        case authorName
-        case role = "Role"
-        case itemNumber = "ItemNumber"
-    }
-}
+//struct Author: Codable {
+//    let authorName: String
+//    let role: Role
+//    let itemNumber: String
+//    
+//    enum CodingKeys: String, CodingKey {
+//        case authorName
+//        case role = "Role"
+//        case itemNumber = "ItemNumber"
+//    }
+//}
 
-enum Role: String, Codable {
-    case author = "Author"
-}
-
-enum SCount: String, Codable {
-    case the٠ = "٠"
-    case the١ = "١"
-    case the٢ = "٢"
-}
-
-enum PublishDate: String, Codable {
-    case the٢٠١٨ = "٢٠١٨"
-}
-
-struct NewStyle: Codable {
-    let appStyleURL, epubStyleURL: String
-    let styleVersion: String
-    
-    enum CodingKeys: String, CodingKey {
-        case appStyleURL, epubStyleURL
-        case styleVersion = "StyleVersion"
-    }
-}
-
-struct OldStyle: Codable {
-    let styleURL: String
-    let styleVersion: String
-    
-    enum CodingKeys: String, CodingKey {
-        case styleURL = "StyleURL"
-        case styleVersion = "StyleVersion"
-    }
-}
+//enum Role: String, Codable {
+//    case author = "Author"
+//}
+//
+//enum PublishDate: String, Codable {
+//    case the٢٠١٣ = "٢٠١٣"
+//    case the٢٠١٤ = "٢٠١٤"
+//    case the٢٠١٥ = "٢٠١٥"
+//}

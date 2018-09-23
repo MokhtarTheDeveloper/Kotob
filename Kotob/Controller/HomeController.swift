@@ -9,38 +9,42 @@
 import UIKit
 import SDWebImage
 
-class NewHomeController : UITableViewController{
+class HomeController : UITableViewController{
     
     let mostRecentCellID = "mostRecent"
     let categoryCellID = "categoryCell"
     
     struct APIUrls {
         static var mostRecentAPI = "https://api.hindawi.org/cbx/kalimat/list/most.recent.pagination/return.type/json/lastid/%7Blastid%7D/pagesize/%7Bpagesize%7D/fields/cover.1536x2048,thumb.304x406/"
-        static var mostDownloadedAPI = "https://api.hindawi.org/cbx/kalimat/list/most.recent.pagination/return.type/json/lastid/%7Blastid%7D/pagesize/%7Bpagesize%7D/fields/cover.1536x2048,thumb.304x406/"
+        static var mostDownloadedAPI = "https://api.hindawi.org/cbx/kalimat/list/most.downloaded.pagination/return.type/json/lastid/%7Blastid%7D/pagesize/%7Bpagesize%7D/fields/cover.1536x2048,thumb.304x406/"
     }
     
     var recentBooksArray = [Book]()
-    var mostDownloadedArray = [Book]()
+    var mostDownloadedArray = [MostDownloadedBook]()
 
+    let mostRecentQueue = DispatchQueue(label: "com.kotob.mostRecent",qos: .userInteractive ,attributes: .concurrent)
+    let mostDownlodedQueue = DispatchQueue(label: "com.kotob.mostDownloaded",qos: .userInteractive, attributes: .concurrent)
     
-    fileprivate func getRecentBooks() {
-        HindawiAPI.getMostRecent(urlString: APIUrls.mostRecentAPI) { (bookCategory) in
-            self.recentBooksArray = bookCategory.books
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-            }
-        }
-    }
     
-    fileprivate func getMostDownloadedBook() {
+    fileprivate func getBooks() {
         
-        HindawiAPI.getMostRecent(urlString: APIUrls.mostDownloadedAPI) { (bookCategory) in
-            self.mostDownloadedArray = bookCategory.books
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
+            HindawiAPI.getAHomeCategory(urlString: APIUrls.mostDownloadedAPI) { (bookCategory: MostDownloaded) in
+                self.mostDownloadedArray = bookCategory.books
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
             }
-        }
+        
+        
+            HindawiAPI.getAHomeCategory(urlString: APIUrls.mostRecentAPI) { (bookCategory: MostRecentBooks) in
+                self.recentBooksArray = bookCategory.books
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            }
+        
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,11 +52,13 @@ class NewHomeController : UITableViewController{
         UIView.appearance().semanticContentAttribute = .forceRightToLeft
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "user"), style: .plain, target: self, action: #selector(showUserProfile))
-        getRecentBooks()
-        
-        getMostDownloadedBook()
         
         tableView.register(UINib(nibName: "CategoryTableViewCell", bundle: nil), forCellReuseIdentifier: categoryCellID)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        getBooks()
     }
     
     @objc fileprivate func showUserProfile() {
@@ -72,10 +78,12 @@ class NewHomeController : UITableViewController{
             cell.BooksArray = recentBooksArray
             cell.width = 188.6
             cell.height = 310.5
+            cell.isMostRecentCategoryType = true
         } else {
-            cell.BooksArray = mostDownloadedArray
+            cell.mostDownloadedBookArray = mostDownloadedArray
             cell.width = 127.1
-            cell.height = 209.25
+            cell.height = 169.61
+            cell.isMostRecentCategoryType = false
         }
         return cell
     }
@@ -84,7 +92,7 @@ class NewHomeController : UITableViewController{
         if indexPath.section == 0 {
             return 350
         } else {
-            return 270
+            return 200
         }
     }
     

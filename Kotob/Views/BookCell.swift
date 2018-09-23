@@ -11,6 +11,7 @@ import UIKit
 class BookCell : UICollectionViewCell{
     
     
+    @IBOutlet weak var bookCover: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
     }

@@ -25,7 +25,7 @@ class TableViewHeader : UIView {
         UIView.appearance().semanticContentAttribute = .forceRightToLeft
         setUpViews()
         backgroundColor = UIColor(r: 243, g: 245, b: 248)
-        alpha = 0.9
+        alpha = 0.97
     }
     
     fileprivate func setUpViews() {

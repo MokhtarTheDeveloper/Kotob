@@ -26,7 +26,7 @@ class MainTabBarController : UITabBarController{
     func setupViewControllers() {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        let homeController = NewHomeController()
+        let homeController = HomeController()
         
         viewControllers = [
             

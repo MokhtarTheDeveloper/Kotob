@@ -9,15 +9,15 @@
 /* Begin PBXBuildFile section */
 		1302265E21540AA600820CC0 /* registerationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1302265D21540AA600820CC0 /* registerationResponse.swift */; };
 		130226602154334400820CC0 /* ForgetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1302265F2154334400820CC0 /* ForgetResponse.swift */; };
+		1324307D2157F1C700F308B9 /* MostDownloadedBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1324307C2157F1C700F308B9 /* MostDownloadedBooks.swift */; };
 		1333904621524BD10040F4AB /* RegiesterationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1333904521524BD10040F4AB /* RegiesterationController.swift */; };
 		133CBA9921534C560072626C /* ForgotPasswordControllerr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133CBA9821534C560072626C /* ForgotPasswordControllerr.swift */; };
-		139009FF215504C900AC84A0 /* CategoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139009FE215504C900AC84A0 /* CategoriesModel.swift */; };
 		13967BB52156650700ED6E95 /* ASJColoredScrollIndicators.m in Sources */ = {isa = PBXBuildFile; fileRef = 13967BB42156650700ED6E95 /* ASJColoredScrollIndicators.m */; };
 		13967BB72156747900ED6E95 /* PeekBookView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13967BB62156747900ED6E95 /* PeekBookView.xib */; };
 		13967BB921568E8E00ED6E95 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13967BB821568E8E00ED6E95 /* LoginView.swift */; };
 		13967BBB2156D27B00ED6E95 /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13967BBA2156D27B00ED6E95 /* BookCell.xib */; };
 		13967BBD2156D39700ED6E95 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13967BBC2156D39700ED6E95 /* BookCell.swift */; };
-		13DF22D721554642007E0844 /* NewHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DF22D621554642007E0844 /* NewHomeController.swift */; };
+		13DF22D721554642007E0844 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DF22D621554642007E0844 /* HomeController.swift */; };
 		13EE50132151B24D00FEB80C /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EE50122151B24D00FEB80C /* LoginResponse.swift */; };
 		13EE5824215188D90065594C /* Kotob Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EE5823215188D90065594C /* Kotob Button.swift */; };
 		13F239F82152BC80006761C1 /* DroidNaskh-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13F239F62152BC80006761C1 /* DroidNaskh-Bold.ttf */; };
@@ -30,6 +30,7 @@
 		13F45CCC2151568500DF15B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F45CCA2151568500DF15B7 /* LaunchScreen.storyboard */; };
 		13F45CF02151575700DF15B7 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F45CEF2151575700DF15B7 /* LoginController.swift */; };
 		13F45CF22151593A00DF15B7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F45CF12151593A00DF15B7 /* Extensions.swift */; };
+		13F4B2352157430E001018B5 /* BookCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F4B2342157430E001018B5 /* BookCategory.swift */; };
 		13F7BE762152F1DB00A09BB4 /* HindawiAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F7BE752152F1DB00A09BB4 /* HindawiAPI.swift */; };
 		13F8ECC52154E295001EC0DD /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F8ECC42154E295001EC0DD /* MainTabBarController.swift */; };
 		13F8ECCA2154ED63001EC0DD /* MostRecentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13F8ECC92154ED63001EC0DD /* MostRecentCell.xib */; };
@@ -59,9 +60,9 @@
 /* Begin PBXFileReference section */
 		1302265D21540AA600820CC0 /* registerationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerationResponse.swift; sourceTree = "<group>"; };
 		1302265F2154334400820CC0 /* ForgetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetResponse.swift; sourceTree = "<group>"; };
+		1324307C2157F1C700F308B9 /* MostDownloadedBooks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostDownloadedBooks.swift; sourceTree = "<group>"; };
 		1333904521524BD10040F4AB /* RegiesterationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegiesterationController.swift; sourceTree = "<group>"; };
 		133CBA9821534C560072626C /* ForgotPasswordControllerr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordControllerr.swift; sourceTree = "<group>"; };
-		139009FE215504C900AC84A0 /* CategoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesModel.swift; sourceTree = "<group>"; };
 		13967BB22156650600ED6E95 /* Kotob-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kotob-Bridging-Header.h"; sourceTree = "<group>"; };
 		13967BB32156650700ED6E95 /* ASJColoredScrollIndicators.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASJColoredScrollIndicators.h; path = Pods/ASJColoredScrollIndicators/ASJColoredScrollIndicators/ASJColoredScrollIndicators.h; sourceTree = SOURCE_ROOT; };
 		13967BB42156650700ED6E95 /* ASJColoredScrollIndicators.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASJColoredScrollIndicators.m; path = Pods/ASJColoredScrollIndicators/ASJColoredScrollIndicators/ASJColoredScrollIndicators.m; sourceTree = SOURCE_ROOT; };
@@ -69,7 +70,7 @@
 		13967BB821568E8E00ED6E95 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		13967BBA2156D27B00ED6E95 /* BookCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCell.xib; sourceTree = "<group>"; };
 		13967BBC2156D39700ED6E95 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
-		13DF22D621554642007E0844 /* NewHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHomeController.swift; sourceTree = "<group>"; };
+		13DF22D621554642007E0844 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		13EE50122151B24D00FEB80C /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		13EE5823215188D90065594C /* Kotob Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kotob Button.swift"; sourceTree = "<group>"; };
 		13F239F62152BC80006761C1 /* DroidNaskh-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DroidNaskh-Bold.ttf"; sourceTree = "<group>"; };
@@ -86,6 +87,7 @@
 		13F45CDD2151568500DF15B7 /* KotobUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KotobUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13F45CEF2151575700DF15B7 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		13F45CF12151593A00DF15B7 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		13F4B2342157430E001018B5 /* BookCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCategory.swift; sourceTree = "<group>"; };
 		13F7BE752152F1DB00A09BB4 /* HindawiAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HindawiAPI.swift; sourceTree = "<group>"; };
 		13F8ECC42154E295001EC0DD /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		13F8ECC92154ED63001EC0DD /* MostRecentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostRecentCell.xib; sourceTree = "<group>"; };
@@ -134,7 +136,7 @@
 			children = (
 				13F45CEF2151575700DF15B7 /* LoginController.swift */,
 				13F8ECC42154E295001EC0DD /* MainTabBarController.swift */,
-				13DF22D621554642007E0844 /* NewHomeController.swift */,
+				13DF22D621554642007E0844 /* HomeController.swift */,
 				133CBA9821534C560072626C /* ForgotPasswordControllerr.swift */,
 				1333904521524BD10040F4AB /* RegiesterationController.swift */,
 			);
@@ -147,7 +149,8 @@
 				13EE50122151B24D00FEB80C /* LoginResponse.swift */,
 				1302265D21540AA600820CC0 /* registerationResponse.swift */,
 				1302265F2154334400820CC0 /* ForgetResponse.swift */,
-				139009FE215504C900AC84A0 /* CategoriesModel.swift */,
+				13F4B2342157430E001018B5 /* BookCategory.swift */,
+				1324307C2157F1C700F308B9 /* MostDownloadedBooks.swift */,
 				13967BB821568E8E00ED6E95 /* LoginView.swift */,
 			);
 			path = Model;
@@ -471,15 +474,16 @@
 				13F45CF22151593A00DF15B7 /* Extensions.swift in Sources */,
 				13F45CF02151575700DF15B7 /* LoginController.swift in Sources */,
 				133CBA9921534C560072626C /* ForgotPasswordControllerr.swift in Sources */,
-				13DF22D721554642007E0844 /* NewHomeController.swift in Sources */,
+				13DF22D721554642007E0844 /* HomeController.swift in Sources */,
 				1333904621524BD10040F4AB /* RegiesterationController.swift in Sources */,
-				139009FF215504C900AC84A0 /* CategoriesModel.swift in Sources */,
 				13EE50132151B24D00FEB80C /* LoginResponse.swift in Sources */,
 				13F8ECCC2154F002001EC0DD /* MostRecentCell.swift in Sources */,
 				13967BB52156650700ED6E95 /* ASJColoredScrollIndicators.m in Sources */,
 				13F2F28021561AD50029FBD3 /* TableViewHeader.swift in Sources */,
 				13967BB921568E8E00ED6E95 /* LoginView.swift in Sources */,
 				13F7BE762152F1DB00A09BB4 /* HindawiAPI.swift in Sources */,
+				1324307D2157F1C700F308B9 /* MostDownloadedBooks.swift in Sources */,
+				13F4B2352157430E001018B5 /* BookCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
