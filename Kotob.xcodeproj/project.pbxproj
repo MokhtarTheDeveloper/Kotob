@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1302265E21540AA600820CC0 /* registerationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1302265D21540AA600820CC0 /* registerationResponse.swift */; };
 		130226602154334400820CC0 /* ForgetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1302265F2154334400820CC0 /* ForgetResponse.swift */; };
-		1324307D2157F1C700F308B9 /* MostDownloadedBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1324307C2157F1C700F308B9 /* MostDownloadedBooks.swift */; };
 		1333904621524BD10040F4AB /* RegiesterationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1333904521524BD10040F4AB /* RegiesterationController.swift */; };
 		133CBA9921534C560072626C /* ForgotPasswordControllerr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133CBA9821534C560072626C /* ForgotPasswordControllerr.swift */; };
 		13967BB52156650700ED6E95 /* ASJColoredScrollIndicators.m in Sources */ = {isa = PBXBuildFile; fileRef = 13967BB42156650700ED6E95 /* ASJColoredScrollIndicators.m */; };
@@ -30,7 +29,7 @@
 		13F45CCC2151568500DF15B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F45CCA2151568500DF15B7 /* LaunchScreen.storyboard */; };
 		13F45CF02151575700DF15B7 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F45CEF2151575700DF15B7 /* LoginController.swift */; };
 		13F45CF22151593A00DF15B7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F45CF12151593A00DF15B7 /* Extensions.swift */; };
-		13F4B2352157430E001018B5 /* BookCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F4B2342157430E001018B5 /* BookCategory.swift */; };
+		13F4B2352157430E001018B5 /* BooksCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F4B2342157430E001018B5 /* BooksCategory.swift */; };
 		13F7BE762152F1DB00A09BB4 /* HindawiAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F7BE752152F1DB00A09BB4 /* HindawiAPI.swift */; };
 		13F8ECC52154E295001EC0DD /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F8ECC42154E295001EC0DD /* MainTabBarController.swift */; };
 		13F8ECCA2154ED63001EC0DD /* MostRecentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13F8ECC92154ED63001EC0DD /* MostRecentCell.xib */; };
@@ -60,7 +59,6 @@
 /* Begin PBXFileReference section */
 		1302265D21540AA600820CC0 /* registerationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerationResponse.swift; sourceTree = "<group>"; };
 		1302265F2154334400820CC0 /* ForgetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetResponse.swift; sourceTree = "<group>"; };
-		1324307C2157F1C700F308B9 /* MostDownloadedBooks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostDownloadedBooks.swift; sourceTree = "<group>"; };
 		1333904521524BD10040F4AB /* RegiesterationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegiesterationController.swift; sourceTree = "<group>"; };
 		133CBA9821534C560072626C /* ForgotPasswordControllerr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordControllerr.swift; sourceTree = "<group>"; };
 		13967BB22156650600ED6E95 /* Kotob-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kotob-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -87,7 +85,7 @@
 		13F45CDD2151568500DF15B7 /* KotobUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KotobUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13F45CEF2151575700DF15B7 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		13F45CF12151593A00DF15B7 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		13F4B2342157430E001018B5 /* BookCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCategory.swift; sourceTree = "<group>"; };
+		13F4B2342157430E001018B5 /* BooksCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksCategory.swift; sourceTree = "<group>"; };
 		13F7BE752152F1DB00A09BB4 /* HindawiAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HindawiAPI.swift; sourceTree = "<group>"; };
 		13F8ECC42154E295001EC0DD /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		13F8ECC92154ED63001EC0DD /* MostRecentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostRecentCell.xib; sourceTree = "<group>"; };
@@ -149,8 +147,7 @@
 				13EE50122151B24D00FEB80C /* LoginResponse.swift */,
 				1302265D21540AA600820CC0 /* registerationResponse.swift */,
 				1302265F2154334400820CC0 /* ForgetResponse.swift */,
-				13F4B2342157430E001018B5 /* BookCategory.swift */,
-				1324307C2157F1C700F308B9 /* MostDownloadedBooks.swift */,
+				13F4B2342157430E001018B5 /* BooksCategory.swift */,
 				13967BB821568E8E00ED6E95 /* LoginView.swift */,
 			);
 			path = Model;
@@ -482,8 +479,7 @@
 				13F2F28021561AD50029FBD3 /* TableViewHeader.swift in Sources */,
 				13967BB921568E8E00ED6E95 /* LoginView.swift in Sources */,
 				13F7BE762152F1DB00A09BB4 /* HindawiAPI.swift in Sources */,
-				1324307D2157F1C700F308B9 /* MostDownloadedBooks.swift in Sources */,
-				13F4B2352157430E001018B5 /* BookCategory.swift in Sources */,
+				13F4B2352157430E001018B5 /* BooksCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

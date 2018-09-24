@@ -20,7 +20,7 @@ class CategoryTableViewCell : UITableViewCell, UICollectionViewDataSource, UICol
         }
     }
     
-    var mostDownloadedBookArray = [MostDownloadedBook]() {
+    var mostDownloadedBookArray = [Book]() {
         didSet{
             categoryCollectionView.reloadData()
         }

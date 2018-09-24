@@ -20,28 +20,32 @@ class HomeController : UITableViewController{
     }
     
     var recentBooksArray = [Book]()
-    var mostDownloadedArray = [MostDownloadedBook]()
+    var mostDownloadedArray = [Book]()
 
-    let mostRecentQueue = DispatchQueue(label: "com.kotob.mostRecent",qos: .userInteractive ,attributes: .concurrent)
-    let mostDownlodedQueue = DispatchQueue(label: "com.kotob.mostDownloaded",qos: .userInteractive, attributes: .concurrent)
+    let mostRecentQueue = DispatchQueue(label: "com.kotob.mostRecent",qos: .userInteractive)
+//    let mostDownlodedQueue = DispatchQueue(label: "com.kotob.mostDownloaded",qos: .userInteractive, attributes: .concurrent)
     
     
     fileprivate func getBooks() {
         
-            HindawiAPI.getAHomeCategory(urlString: APIUrls.mostDownloadedAPI) { (bookCategory: MostDownloaded) in
+        mostRecentQueue.async {
+            HindawiAPI.getAHomeCategory(urlString: APIUrls.mostDownloadedAPI) { (bookCategory: BooksCategory) in
                 self.mostDownloadedArray = bookCategory.books
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
             }
+        }
         
         
-            HindawiAPI.getAHomeCategory(urlString: APIUrls.mostRecentAPI) { (bookCategory: MostRecentBooks) in
+        mostRecentQueue.async {
+            HindawiAPI.getAHomeCategory(urlString: APIUrls.mostRecentAPI) { (bookCategory: BooksCategory) in
                 self.recentBooksArray = bookCategory.books
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
             }
+        }
         
     }
     
