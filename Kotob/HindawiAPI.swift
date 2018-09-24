@@ -10,6 +10,7 @@ import Foundation
 
 class HindawiAPI {
     
+    
     class func getAHomeCategory<T: Codable>(urlString: String, completionHandler: ((T) -> ())?) {
         guard let url = URL(string: urlString) else { return }
         let session = URLSession.shared.dataTask(with: url) { (data, response, err) in
@@ -19,7 +20,7 @@ class HindawiAPI {
                 completionHandler?(bookCategory)
                 
             } catch let parsingErr{
-                print("error parsing JSON from book category API", parsingErr)
+                print("error parsing JSON from book category API of type \(T.self)", parsingErr)
             }
         }
         session.resume()
