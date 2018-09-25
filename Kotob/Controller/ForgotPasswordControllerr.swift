@@ -71,7 +71,7 @@ class ForgotPasswordControllerr : UIViewController {
         setupLineSeperator()
         setupmailTextField()
         setupLogo()
-        
+        addKeyboardObservers()
         addKeyboardDismessGesture()
     }
     

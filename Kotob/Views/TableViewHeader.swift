@@ -8,11 +8,12 @@
 
 import UIKit
 
+
 class TableViewHeader : UIView {
     
     let headerTitle = UILabel()
     
-    let moreButton : UIButton = {
+    lazy var moreButton : UIButton = {
         let button = UIButton(type: .system)
         button.setImage(UIImage(named: "more"), for: .normal)
         button.setTitle("الكل", for: .normal)
@@ -20,6 +21,9 @@ class TableViewHeader : UIView {
         button.tintColor = .black
         return button
     }()
+    
+    
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         UIView.appearance().semanticContentAttribute = .forceRightToLeft
@@ -28,15 +32,16 @@ class TableViewHeader : UIView {
         alpha = 0.97
     }
     
+    
     fileprivate func setUpViews() {
         addSubview(headerTitle)
         addSubview(moreButton)
         headerTitle.setupXYAnchors(leading: leadingAnchor,centerY: centerYAnchor, leadingConstant: 15)
         headerTitle.widthAnchor.constraint(equalToConstant: 100).isActive = true
-        headerTitle.heightAnchor.constraint(equalToConstant: 24.5).isActive = true
+        headerTitle.heightAnchor.constraint(equalToConstant: 44).isActive = true
         moreButton.setupXYAnchors(trailing: trailingAnchor, centerY: centerYAnchor, trailingConstant: -15)
         moreButton.widthAnchor.constraint(equalToConstant: 35).isActive = true
-        moreButton.heightAnchor.constraint(equalToConstant: 24.5).isActive = true
+        moreButton.heightAnchor.constraint(equalToConstant: 34).isActive = true
     }
     
     required init?(coder aDecoder: NSCoder) {

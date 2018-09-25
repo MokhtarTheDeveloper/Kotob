@@ -17,7 +17,5 @@ class MostRecentCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         backgroundColor = .white
-        layer.cornerRadius = 10
-        layer.masksToBounds = true
     }
 }

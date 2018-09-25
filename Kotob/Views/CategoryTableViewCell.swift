@@ -14,14 +14,16 @@ class CategoryTableViewCell : UITableViewCell, UICollectionViewDataSource, UICol
     
     var width, height: CGFloat!
     var isMostRecentCategoryType : Bool!
-    var BooksArray = [Book](){
+    var booksArray = [Book](){
         didSet{
+            booksArray.reverse()
             categoryCollectionView.reloadData()
         }
     }
     
     var mostDownloadedBookArray = [Book]() {
         didSet{
+            mostDownloadedBookArray.reverse()
             categoryCollectionView.reloadData()
         }
     }
@@ -52,7 +54,7 @@ class CategoryTableViewCell : UITableViewCell, UICollectionViewDataSource, UICol
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if isMostRecentCategoryType {
-            return BooksArray.count
+            return booksArray.count
 
         } else {
             return mostDownloadedBookArray.count
@@ -64,8 +66,10 @@ class CategoryTableViewCell : UITableViewCell, UICollectionViewDataSource, UICol
         if isMostRecentCategoryType {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: mostRecentCellID, for: indexPath) as! MostRecentCell
             
-            let urlString = BooksArray[indexPath.item].thumbURL
+            let urlString = booksArray[indexPath.item].thumbURL
             let url = URL(string: urlString)
+            cell.layer.cornerRadius = 10
+            cell.layer.masksToBounds = true
             cell.bookCover.sd_setImage(with: url, completed: nil)
             return cell
         } else {

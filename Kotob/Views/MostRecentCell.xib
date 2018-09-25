@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,16 +17,15 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n5h-xF-rCO">
-                    <rect key="frame" x="0.0" y="0.0" width="188" height="250"/>
+                    <rect key="frame" x="0.0" y="0.0" width="188" height="251"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="n5h-xF-rCO" secondAttribute="height" multiplier="304:406" id="S3r-VT-LQC"/>
                     </constraints>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="vtz-cm-8tC">
-                    <rect key="frame" x="82" y="267.5" width="24.5" height="26.5"/>
+                    <rect key="frame" x="81" y="268.5" width="26" height="25"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="26.5" id="4Qd-PZ-CRq"/>
-                        <constraint firstAttribute="width" constant="24.5" id="E83-Z9-CBV"/>
+                        <constraint firstAttribute="width" secondItem="vtz-cm-8tC" secondAttribute="height" multiplier="19:18" id="u0e-0o-EFY"/>
                     </constraints>
                 </imageView>
             </subviews>
@@ -37,6 +35,7 @@
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="n5h-xF-rCO" secondAttribute="trailing" id="Isf-Tu-gNd"/>
                 <constraint firstItem="n5h-xF-rCO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MXU-gf-KlW"/>
                 <constraint firstItem="vtz-cm-8tC" firstAttribute="top" secondItem="n5h-xF-rCO" secondAttribute="bottom" constant="17.5" id="Tvm-9p-oYz"/>
+                <constraint firstItem="vtz-cm-8tC" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="26.5:188.6" id="n8L-KQ-Nye"/>
                 <constraint firstItem="n5h-xF-rCO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="s1c-U9-Kka"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

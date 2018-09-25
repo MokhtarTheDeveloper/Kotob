@@ -11,6 +11,8 @@ import SDWebImage
 
 class HomeController : UITableViewController{
     
+    
+    
     let mostRecentCellID = "mostRecent"
     let categoryCellID = "categoryCell"
     
@@ -53,15 +55,31 @@ class HomeController : UITableViewController{
     }
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = UIColor(r: 243, g: 245, b: 248)
-        UIView.appearance().semanticContentAttribute = .forceRightToLeft
-        
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "user"), style: .plain, target: self, action: #selector(showUserProfile))
-        
+    
+    
+    fileprivate func registeringTableViewCell() {
         tableView.register(UINib(nibName: "CategoryTableViewCell", bundle: nil), forCellReuseIdentifier: categoryCellID)
     }
+    
+    fileprivate func setingUpViewAppearance() {
+        view.backgroundColor = UIColor(r: 243, g: 245, b: 248)
+        UIView.appearance().semanticContentAttribute = .forceRightToLeft
+    }
+    
+    fileprivate func addingBarButtons() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "user"), style: .plain, target: self, action: #selector(showUserProfile))
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setingUpViewAppearance()
+        
+        addingBarButtons()
+        
+        registeringTableViewCell()
+    }
+    
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -71,6 +89,25 @@ class HomeController : UITableViewController{
     @objc fileprivate func showUserProfile() {
         print("123")
     }
+    
+    
+    @objc func handleMoreButton() {
+        let layout = UICollectionViewFlowLayout()
+        layout.minimumInteritemSpacing = 8
+        let moreController = MoreOfACategoryController(collectionViewLayout: layout)
+        moreController.category = .mostRecent
+        navigationController?.pushViewController(moreController, animated: true)
+    }
+    
+    @objc func handleMoreButton2() {
+        let layout = UICollectionViewFlowLayout()
+        layout.minimumInteritemSpacing = 8
+        let moreController = MoreOfACategoryController(collectionViewLayout: layout)
+        moreController.category = .mostDownloaded
+        navigationController?.pushViewController(moreController, animated: true)
+    }
+    
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
@@ -82,7 +119,7 @@ class HomeController : UITableViewController{
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: categoryCellID, for: indexPath) as! CategoryTableViewCell
         if indexPath.section == 0 {
-            cell.BooksArray = recentBooksArray
+            cell.booksArray = recentBooksArray
             cell.width = 188.6
             cell.height = 310.5
             cell.isMostRecentCategoryType = true
@@ -104,25 +141,32 @@ class HomeController : UITableViewController{
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 20
+        return 22
     }
 
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headeView = TableViewHeader()
+        
+        let headerView : TableViewHeader = {
+            let headerView = TableViewHeader()
+            return headerView
+        }()
+        
+        
         if section == 0 {
-            headeView.headerTitle.text = "احدث الكتب"
+            headerView.headerTitle.text = "احدث الكتب"
+            headerView.moreButton.addTarget(self, action: #selector(handleMoreButton), for: .touchUpInside)
             
         } else {
-            headeView.headerTitle.text = "الاكثر تحميلا"
-
+            headerView.headerTitle.text = "الاكثر تحميلا"
+            headerView.moreButton.addTarget(self, action: #selector(handleMoreButton2), for: .touchUpInside)
         }
-        headeView.headerTitle.font = UIFont.textStyle
-        return headeView
+        headerView.headerTitle.font = UIFont.textStyle
+        return headerView
     }
     
     override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        let fview = UIView()
-        return fview
+        let footerView = UIView()
+        return footerView
     }
     
     override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {

@@ -31,7 +31,8 @@ struct Book: Codable {
     let isFree: Int
     let price: String
     let epubCSSVersion: Int
-    let approvalDate, title: String
+    let approvalDate: String?
+    let title: String
     let coverURL, thumbURL: String
     let description: String
     let publishDate: String
