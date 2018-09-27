@@ -39,8 +39,7 @@ class MoreOfACategoryController: UICollectionViewController, UICollectionViewDel
     
     
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    fileprivate func loadCategory() {
         if category == Category.mostRecent {
             HindawiAPI.getAHomeCategory(urlString: category.rawValue) { (booksArray: BooksCategory) in
                 self.books = booksArray.books
@@ -61,6 +60,13 @@ class MoreOfACategoryController: UICollectionViewController, UICollectionViewDel
             }
             
         }
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        loadCategory()
         
     }
 
@@ -77,10 +83,6 @@ class MoreOfACategoryController: UICollectionViewController, UICollectionViewDel
         let thumbUrlString = books[indexPath.item].thumbURL
         let thumbUrl = URL(string: thumbUrlString)
         cell.bookCover.sd_setImage(with: thumbUrl, completed: nil)
-        cell.bookCover.layer.cornerRadius = 0
-        cell.bookCover.layer.masksToBounds = false
-        
-        
         return cell
     }
 
@@ -89,5 +91,7 @@ class MoreOfACategoryController: UICollectionViewController, UICollectionViewDel
         let width = ((view.frame.width) - 4 * 8) / 3
         let height = 192 * width / 114
         return CGSize(width: width, height: height)
-}
+    }
+    
+    
 }
