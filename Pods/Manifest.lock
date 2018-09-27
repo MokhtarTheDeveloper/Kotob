@@ -1,0 +1,22 @@
+PODS:
+  - ASJColoredScrollIndicators (1.1)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+
+DEPENDENCIES:
+  - ASJColoredScrollIndicators
+  - SDWebImage (~> 4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ASJColoredScrollIndicators
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  ASJColoredScrollIndicators: 75c0d9b6c17f3e864bd374e0bd7f5847976d6cf7
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+
+PODFILE CHECKSUM: a4b70555ece4c032a3c3159cc5a5d600783c9c40
+
+COCOAPODS: 1.5.3

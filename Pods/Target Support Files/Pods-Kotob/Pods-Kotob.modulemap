@@ -1,0 +1,6 @@
+framework module Pods_Kotob {
+  umbrella header "Pods-Kotob-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -13,7 +13,6 @@
 		1339942121597ABA005EFF6C /* MoreOfACategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1339941F21597AB9005EFF6C /* MoreOfACategoryController.swift */; };
 		133CBA9921534C560072626C /* ForgotPasswordControllerr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133CBA9821534C560072626C /* ForgotPasswordControllerr.swift */; };
 		13967BB52156650700ED6E95 /* ASJColoredScrollIndicators.m in Sources */ = {isa = PBXBuildFile; fileRef = 13967BB42156650700ED6E95 /* ASJColoredScrollIndicators.m */; };
-		13967BB72156747900ED6E95 /* PeekBookView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13967BB62156747900ED6E95 /* PeekBookView.xib */; };
 		13967BB921568E8E00ED6E95 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13967BB821568E8E00ED6E95 /* LoginView.swift */; };
 		13967BBB2156D27B00ED6E95 /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13967BBA2156D27B00ED6E95 /* BookCell.xib */; };
 		13967BBD2156D39700ED6E95 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13967BBC2156D39700ED6E95 /* BookCell.swift */; };
@@ -66,7 +65,6 @@
 		13967BB22156650600ED6E95 /* Kotob-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kotob-Bridging-Header.h"; sourceTree = "<group>"; };
 		13967BB32156650700ED6E95 /* ASJColoredScrollIndicators.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASJColoredScrollIndicators.h; path = Pods/ASJColoredScrollIndicators/ASJColoredScrollIndicators/ASJColoredScrollIndicators.h; sourceTree = SOURCE_ROOT; };
 		13967BB42156650700ED6E95 /* ASJColoredScrollIndicators.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASJColoredScrollIndicators.m; path = Pods/ASJColoredScrollIndicators/ASJColoredScrollIndicators/ASJColoredScrollIndicators.m; sourceTree = SOURCE_ROOT; };
-		13967BB62156747900ED6E95 /* PeekBookView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeekBookView.xib; sourceTree = "<group>"; };
 		13967BB821568E8E00ED6E95 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		13967BBA2156D27B00ED6E95 /* BookCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCell.xib; sourceTree = "<group>"; };
 		13967BBC2156D39700ED6E95 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
@@ -216,7 +214,6 @@
 				13F8ECCB2154F002001EC0DD /* MostRecentCell.swift */,
 				13F312372155F76D00EA22F7 /* CategoryTableViewCell.swift */,
 				13F312392155F96900EA22F7 /* CategoryTableViewCell.xib */,
-				13967BB62156747900ED6E95 /* PeekBookView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -357,7 +354,6 @@
 			files = (
 				13967BBB2156D27B00ED6E95 /* BookCell.xib in Resources */,
 				13F3123A2155F96900EA22F7 /* CategoryTableViewCell.xib in Resources */,
-				13967BB72156747900ED6E95 /* PeekBookView.xib in Resources */,
 				13F239F92152BC80006761C1 /* DroidNaskh-Regular.ttf in Resources */,
 				13F8ECCA2154ED63001EC0DD /* MostRecentCell.xib in Resources */,
 				13F239F82152BC80006761C1 /* DroidNaskh-Bold.ttf in Resources */,

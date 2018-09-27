@@ -89,6 +89,5 @@ class CategoryTableViewCell : UITableViewCell, UICollectionViewDataSource, UICol
 
         return CGSize(width: width, height: height)
     }
-    
 
 }

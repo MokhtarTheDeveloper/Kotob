@@ -17,6 +17,16 @@ extension UIColor {
     static var nagwaOrange = UIColor(r: 255, g: 122, b: 79)
 }
 
+
+extension UIApplication {
+    static func mainTabBarController() -> MainTabBarController? {
+        
+        return shared.keyWindow?.rootViewController as? MainTabBarController
+    }
+}
+
+
+
 extension UIFont {
     class var textStyle: UIFont {
         return UIFont(name: "DroidArabicNaskh-Bold", size: 13.0)!
