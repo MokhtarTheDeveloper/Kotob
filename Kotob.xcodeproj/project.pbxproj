@@ -10,7 +10,6 @@
 		1302265E21540AA600820CC0 /* registerationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1302265D21540AA600820CC0 /* registerationResponse.swift */; };
 		130226602154334400820CC0 /* ForgetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1302265F2154334400820CC0 /* ForgetResponse.swift */; };
 		1333904621524BD10040F4AB /* RegiesterationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1333904521524BD10040F4AB /* RegiesterationController.swift */; };
-		1339942121597ABA005EFF6C /* MoreOfACategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1339941F21597AB9005EFF6C /* MoreOfACategoryController.swift */; };
 		133CBA9921534C560072626C /* ForgotPasswordControllerr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133CBA9821534C560072626C /* ForgotPasswordControllerr.swift */; };
 		13967BB52156650700ED6E95 /* ASJColoredScrollIndicators.m in Sources */ = {isa = PBXBuildFile; fileRef = 13967BB42156650700ED6E95 /* ASJColoredScrollIndicators.m */; };
 		13967BB921568E8E00ED6E95 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13967BB821568E8E00ED6E95 /* LoginView.swift */; };
@@ -19,6 +18,7 @@
 		13DF22D721554642007E0844 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DF22D621554642007E0844 /* HomeController.swift */; };
 		13EE50132151B24D00FEB80C /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EE50122151B24D00FEB80C /* LoginResponse.swift */; };
 		13EE5824215188D90065594C /* Kotob Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EE5823215188D90065594C /* Kotob Button.swift */; };
+		13F06AFF215CBE2200C3EF30 /* MoreOfCategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F06AFE215CBE2200C3EF30 /* MoreOfCategoryController.swift */; };
 		13F239F82152BC80006761C1 /* DroidNaskh-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13F239F62152BC80006761C1 /* DroidNaskh-Bold.ttf */; };
 		13F239F92152BC80006761C1 /* DroidNaskh-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13F239F72152BC80006761C1 /* DroidNaskh-Regular.ttf */; };
 		13F2F28021561AD50029FBD3 /* TableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F2F27F21561AD50029FBD3 /* TableViewHeader.swift */; };
@@ -60,7 +60,6 @@
 		1302265D21540AA600820CC0 /* registerationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerationResponse.swift; sourceTree = "<group>"; };
 		1302265F2154334400820CC0 /* ForgetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetResponse.swift; sourceTree = "<group>"; };
 		1333904521524BD10040F4AB /* RegiesterationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegiesterationController.swift; sourceTree = "<group>"; };
-		1339941F21597AB9005EFF6C /* MoreOfACategoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MoreOfACategoryController.swift; path = /Users/mokhtar/Desktop/Kotob/Kotob/Controller/MoreOfACategoryController.swift; sourceTree = "<absolute>"; };
 		133CBA9821534C560072626C /* ForgotPasswordControllerr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordControllerr.swift; sourceTree = "<group>"; };
 		13967BB22156650600ED6E95 /* Kotob-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kotob-Bridging-Header.h"; sourceTree = "<group>"; };
 		13967BB32156650700ED6E95 /* ASJColoredScrollIndicators.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASJColoredScrollIndicators.h; path = Pods/ASJColoredScrollIndicators/ASJColoredScrollIndicators/ASJColoredScrollIndicators.h; sourceTree = SOURCE_ROOT; };
@@ -71,6 +70,7 @@
 		13DF22D621554642007E0844 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		13EE50122151B24D00FEB80C /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		13EE5823215188D90065594C /* Kotob Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kotob Button.swift"; sourceTree = "<group>"; };
+		13F06AFE215CBE2200C3EF30 /* MoreOfCategoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreOfCategoryController.swift; sourceTree = "<group>"; };
 		13F239F62152BC80006761C1 /* DroidNaskh-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DroidNaskh-Bold.ttf"; sourceTree = "<group>"; };
 		13F239F72152BC80006761C1 /* DroidNaskh-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DroidNaskh-Regular.ttf"; sourceTree = "<group>"; };
 		13F2F27F21561AD50029FBD3 /* TableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHeader.swift; sourceTree = "<group>"; };
@@ -132,11 +132,11 @@
 		1302265B21540A0400820CC0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				1339941F21597AB9005EFF6C /* MoreOfACategoryController.swift */,
 				13F45CEF2151575700DF15B7 /* LoginController.swift */,
 				13F8ECC42154E295001EC0DD /* MainTabBarController.swift */,
 				13DF22D621554642007E0844 /* HomeController.swift */,
 				133CBA9821534C560072626C /* ForgotPasswordControllerr.swift */,
+				13F06AFE215CBE2200C3EF30 /* MoreOfCategoryController.swift */,
 				1333904521524BD10040F4AB /* RegiesterationController.swift */,
 			);
 			path = Controller;
@@ -467,6 +467,7 @@
 				13F45CC22151568100DF15B7 /* AppDelegate.swift in Sources */,
 				13F312382155F76D00EA22F7 /* CategoryTableViewCell.swift in Sources */,
 				13967BBD2156D39700ED6E95 /* BookCell.swift in Sources */,
+				13F06AFF215CBE2200C3EF30 /* MoreOfCategoryController.swift in Sources */,
 				13F45CF22151593A00DF15B7 /* Extensions.swift in Sources */,
 				13F45CF02151575700DF15B7 /* LoginController.swift in Sources */,
 				133CBA9921534C560072626C /* ForgotPasswordControllerr.swift in Sources */,
@@ -477,7 +478,6 @@
 				13967BB52156650700ED6E95 /* ASJColoredScrollIndicators.m in Sources */,
 				13F2F28021561AD50029FBD3 /* TableViewHeader.swift in Sources */,
 				13967BB921568E8E00ED6E95 /* LoginView.swift in Sources */,
-				1339942121597ABA005EFF6C /* MoreOfACategoryController.swift in Sources */,
 				13F7BE762152F1DB00A09BB4 /* HindawiAPI.swift in Sources */,
 				13F4B2352157430E001018B5 /* BooksCategory.swift in Sources */,
 			);

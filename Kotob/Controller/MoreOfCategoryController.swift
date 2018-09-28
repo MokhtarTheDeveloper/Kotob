@@ -1,6 +1,6 @@
 //
 //  MoreOfACategoryController.swift
-//  
+//
 //
 //  Created by Mokhtar on 9/24/18.
 //
@@ -25,7 +25,7 @@ class MoreOfACategoryController: UICollectionViewController, UICollectionViewDel
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareCollcetionView()
-
+        
     }
     
     
@@ -38,18 +38,14 @@ class MoreOfACategoryController: UICollectionViewController, UICollectionViewDel
     }
     
     
-    
     fileprivate func loadCategory() {
         if category == Category.mostRecent {
             HindawiAPI.getAHomeCategory(urlString: category.rawValue) { (booksArray: BooksCategory) in
                 self.books = booksArray.books
                 DispatchQueue.main.async {
                     self.collectionView?.reloadData()
-                    
                 }
             }
-            
-            
         } else {
             HindawiAPI.getAHomeCategory(urlString: category.rawValue) { (booksArray: BooksCategory) in
                 self.books = booksArray.books
@@ -58,7 +54,6 @@ class MoreOfACategoryController: UICollectionViewController, UICollectionViewDel
                     
                 }
             }
-            
         }
     }
     
@@ -69,15 +64,16 @@ class MoreOfACategoryController: UICollectionViewController, UICollectionViewDel
         loadCategory()
         
     }
-
-
+    
+    
     // MARK: UICollectionViewDataSource
-
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         return books.count
     }
-
+    
+    
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! MostRecentCell
         let thumbUrlString = books[indexPath.item].thumbURL
@@ -85,7 +81,7 @@ class MoreOfACategoryController: UICollectionViewController, UICollectionViewDel
         cell.bookCover.sd_setImage(with: thumbUrl, completed: nil)
         return cell
     }
-
+    
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = ((view.frame.width) - 4 * 8) / 3

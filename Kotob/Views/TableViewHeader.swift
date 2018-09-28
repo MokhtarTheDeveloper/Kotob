@@ -23,7 +23,6 @@ class TableViewHeader : UIView {
     }()
     
     
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         UIView.appearance().semanticContentAttribute = .forceRightToLeft
